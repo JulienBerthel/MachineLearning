@@ -43,15 +43,15 @@ public class Kmean {
         return clusters;
     }
 
-    public Point barry(List<Point> donnees){
+    public Point barry(List<Point> listeclacsse){
         Point moyenne=null;
         double x=0;
         double y=0;
-        for(int i=0;i<donnees.size();i++){
-            x+=donnees.get(i).getX();
-            y+=donnees.get(i).getY();
+        for(int i=0;i<listeclacsse.size();i++){
+            x+=listeclacsse.get(i).getX();
+            y+=listeclacsse.get(i).getY();
         }
-        moyenne=new Point(x/donnees.size(),y/donnees.size());
+        moyenne=new Point(x/listeclacsse.size(),y/listeclacsse.size());
         return moyenne;
     }
 }
